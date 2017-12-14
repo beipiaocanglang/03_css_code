@@ -1,0 +1,251 @@
+/* 
+	清除浮动
+		加上浮动后会对父元素和相邻的没有浮动的元素产生莫名的影响，所以要清除浮动
+*/
+.clear{
+	clear: both;
+}
+
+
+/* top部分 */
+.top_left{
+	/* 向左浮动 (从左到右排序)*/
+	float: left;
+	/* 距离左边的距离 */
+	margin-left: 150px;
+}
+.top_right{
+	/* 向右浮动(从右到左排序) */
+	float: right;
+	/* 距离右侧距离 */
+	margin-right: 140px;
+	/* 距离上面距离 */
+	margin-top: 20px;
+}
+/* 设置class=top_right下面的a标签添加css样式 */
+.top_right a{
+	/* 设置字体大小 */
+	font-size: 13px;
+	/* 清除下划线 */
+	text-decoration: none;
+	/* 设置字体颜色 */
+	color: #06f
+}
+.top_right a:hover{
+	/* 设置鼠标放在a标签上时的字体颜色 */
+	color: #909;
+}
+/* 设置img标签按钮距离上面的距离 */
+.top_right img{
+	/* 有时候margin-top不好使，所以可以使用反向的 */
+	margin-bottom: -4px;
+}
+
+
+/* menu部分 */
+.menu ul{
+	/* 设置对齐方式 */
+	text-align: center;
+	/* 设置背景颜色 */
+	background-color: #1c3f09;
+	/* 设置内侧上下为10左右不变 */
+	padding: 10px 0;
+	/* 设置边框线的粗细和颜色 */
+	border-top: 4px solid #82b211; 
+	margin: 0;
+	/* 设置距离顶部的距离 */
+	margin-top: 10px;
+}
+.menu ul li{
+	/* 使其列表标签在一行显示 */
+	display: inline;
+	/* 上下间距不变，左右间距为8 */
+	margin: 0 8px; 
+}
+.menu ul li a{
+	/* 清除下划线 */
+	text-decoration: none;
+	/* 设置字体大小 */
+	font-size: 18px;
+	/* 设置字体颜色 */
+	color: #ffffff
+}
+.menu ul li a:hover{
+	/* 设置鼠标放上去时的字体颜色 */
+	color:#999;
+}
+.menu ul li.yellli a{
+	color: yellow;
+}
+
+
+/* Search部分 */
+.search{
+	/* 设置背景颜色 */
+	background-color: #b6b684; 
+	padding: 5px 0;
+	/* 设置对齐方式 */
+	text-align: right;
+}
+.search div.a{
+	/* 向右浮动(从右到左排列) */
+	float: right;
+}
+.search input[type="image"]{
+	/* 设置距离右侧和上面的距离 */
+	margin-right: 440px;
+	margin-bottom: -5px;
+}
+.search{
+	/* 设置字体大小 */
+	font-size: 15px;
+}
+.search input[type="text"]{
+	/* 设置输入框的高度 */
+	height: 17px;
+	/* 在输入框上加上边框，并且设置边框的粗细和颜色 */
+	border: 1px solid #999;
+}
+
+
+/* nav部分 */
+.nav{
+	/* 设置div宽度(可加背景颜色测试) */
+	width: 1000px;
+	/* 设置对齐方式和字体大小 */
+	text-align: right;
+	font-size: 14px;
+	/* 设置外边距，上下为9左右不变 */
+	padding: 9px 0;
+	margin: 0 auto;
+	/* 设置距离上面的内边距 */
+	margin-top: 10px;
+}
+.nav a:hover{
+	/* 清除下划线，并且添加鼠标放到a标签上时的颜色 */
+	text-decoration: none;
+	color: #999
+}
+
+
+/* content部分 */
+.content{
+	/* 设置div的宽度 、背景颜色、边框的粗细和颜色*/
+	width: 960px;
+	background-color: #FCFDEF;
+	border:1px solid #999;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.content h1{
+	/* 设置字体大小和距离顶部的距离 */
+	font-size: 15px;
+	margin-top: 20px;
+}
+.content .myh1{
+	margin: 0px;
+	/* 使整个图书列表的内容在一行显示 */
+	display: inline;
+}
+.content span{
+	font-size: 12px;
+}
+.content hr{
+	color: #999;
+}
+.content img{
+	width: 100%;
+}
+.content .booklist .book img{
+	/* 设置图书的固定宽度来覆盖上面设置的100%宽度 */
+	width: 130px;
+	height: 197px;
+}
+.booklist{
+	margin: 10px 0;
+}
+.book{
+	/* 图书内容想做浮动，并且占据25% */
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+/* 分页部分 */
+.jumppage ul{
+	/* 列表标签居中显示 */
+	text-align: center;
+	/* 设置距离上下内边边框的间距 */
+	margin: 30px 0;
+}
+
+.jumppage ul li{
+	/* 使列表标签在一行显示 */
+	display:inline;
+}
+.jumppage ul li a{
+	/* 清除下划线、设置边框、字体颜色、字体距离上下边框的距离 */
+	text-decoration: none;
+	border: 1px solid #69F;
+	color: #6699FF;
+	padding: 3px 5px;
+}
+.jumppage ul li a:hover{
+	/* 设置鼠标放在a标签上时的字体颜色、边框颜色、背景颜色 */
+	color: #000000;
+	border-color: #2B66A5;
+	background-color: red;
+}
+.jumppage ul li.disableli a{
+	color: #999;
+	border-color: #999;
+}
+.jumppage ul li.current a{
+	background-color: blue;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* foot部分 */
+.foot{
+	margin: 30px 0;
+	/* 设置背景颜色 */
+	background-color: #efeedc;
+	/* 因为有浮动的原因可以使用指定背景的高度来确认(清除浮动的第二种方式) */
+	height: 60px;
+}
+.foot div{
+	/* 向左浮动 */
+	float: left;
+	/* 设置距离顶部的距离 */
+	margin-top: 5xp;
+}
+.foot .foot_left{
+	margin-left:180px;
+}
+.foot .foot_right{
+	margin-left: 150px;
+	margin-top: 5px;
+}
+.foot .foot_right span{
+	font-size: 14px;
+	color: #747556;
+	/* 设置字体之间的行高 */
+	line-height: 24px;
+	/* 设置字体为粗体 */
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
